@@ -50,9 +50,9 @@ def login():
         ).fetchone()
 
         if user is None:
-            error = 'Incorrect username.'
+            error = 'Usuario Inconrrecto.'
         elif not check_password_hash(user['password'], password):
-            error = 'Incorrect password.'
+            error = 'Contraseña Incorrecta.'
 
         if error is None:
             session.clear()
