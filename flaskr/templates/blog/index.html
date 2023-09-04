@@ -1,5 +1,5 @@
 {% extends 'base.html' %} {% block header %}
-<h1>{% block title %}Posteos{% endblock %}</h1>
+<h1>{% block title %}Publicacion{% endblock %}</h1>
 {% if g.user %}
 <a class="action" href="{{ url_for('blog.create') }}">Nuevo</a>
 {% endif %} {% endblock %} {% block content %} {% for post in posts %}
